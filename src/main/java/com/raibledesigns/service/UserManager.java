@@ -2,6 +2,7 @@ package com.raibledesigns.service;
 
 import com.raibledesigns.dao.UserDao;
 import com.raibledesigns.model.User;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -51,6 +52,7 @@ public interface UserManager extends GenericManager<User, Long> {
      * Retrieves a list of all users.
      * @return List
      */
+    @Secured({"ROLE_ADMIN"})
     List<User> getUsers();
 
     /**
@@ -75,6 +77,7 @@ public interface UserManager extends GenericManager<User, Long> {
      *
      * @param userId the user's id
      */
+    @Secured({"ROLE_ADMIN"})
     void removeUser(String userId);
 
     /**

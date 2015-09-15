@@ -15,10 +15,10 @@
         <p><fmt:message key="errorPage.message"/></p>
 
         <% if (exception != null) { %>
-        <pre><% exception.printStackTrace(new java.io.PrintWriter(out)); %></pre>
-        <% } else if ((Exception)request.getAttribute("javax.servlet.error.exception") != null) { %>
-                    <pre><% ((Exception)request.getAttribute("javax.servlet.error.exception"))
-                            .printStackTrace(new java.io.PrintWriter(out)); %></pre>
+            <pre><% exception.printStackTrace(new java.io.PrintWriter(out)); %></pre>
+        <% } else if (request.getAttribute("javax.servlet.error.exception") != null) { %>
+            <pre><% ((Exception)request.getAttribute("javax.servlet.error.exception"))
+                    .printStackTrace(new java.io.PrintWriter(out)); %></pre>
         <% } %>
     </div>
 </body>
