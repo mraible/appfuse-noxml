@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.raibledesigns.util.DateUtilTest
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.256 sec - in com.raibledesigns.util.DateUtilTest

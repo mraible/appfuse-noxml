@@ -1,6 +1,0 @@
-url=http://localhost:50450/noxml/signup
-cookies=1
-cookie.0.name=JSESSIONID
-cookie.0.domain=localhost
-cookie.0.value=5A902AEB491C154D6AC3DBEB560A5AF7
-cookie.0.path=/noxml/

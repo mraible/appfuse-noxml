@@ -1,6 +1,0 @@
-url=http://localhost:50450/noxml/admin/users?q=matt_raible
-cookies=1
-cookie.0.name=JSESSIONID
-cookie.0.domain=localhost
-cookie.0.value=AAE7EA9C96245F69612CD594ACF3F174
-cookie.0.path=/noxml/
