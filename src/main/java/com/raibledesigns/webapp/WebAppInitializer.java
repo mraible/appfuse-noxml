@@ -12,7 +12,6 @@ import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.DelegatingFilterProxy;
-import org.springframework.web.servlet.DispatcherServlet;
 import org.tuckey.web.filters.urlrewrite.UrlRewriteFilter;
 import ro.isdc.wro.http.WroFilter;
 
@@ -68,8 +67,5 @@ public class WebAppInitializer implements WebApplicationInitializer {
         container.addListener(EscapeXmlELResolverListener.class);
         container.addListener(MenuContextListener.class);
 
-        ServletRegistration.Dynamic dispatcher = container.addServlet("dispatcher", new DispatcherServlet());
-        dispatcher.setLoadOnStartup(1);
-        dispatcher.addMapping("/app/*");
     }
 }
