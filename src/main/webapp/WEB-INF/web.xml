@@ -20,17 +20,21 @@
         <param-name>javax.servlet.jsp.jstl.fmt.fallbackLocale</param-name>
         <param-value>en</param-value>
     </context-param>
+    <context-param>
+        <param-name>contextClass</param-name>
+        <param-value>
+            org.springframework.web.context.support.AnnotationConfigWebApplicationContext
+        </param-value>
+    </context-param>
+
     <!-- Context Configuration locations for Spring XML files -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath:/applicationContext-resources.xml
-            classpath:/applicationContext-dao.xml
-            classpath:/applicationContext-service.xml
-            classpath*:/applicationContext.xml
-            /WEB-INF/applicationContext*.xml
-            /WEB-INF/cxf-servlet.xml
-            /WEB-INF/security.xml
+            com.raibledesigns.config.ResourcesConfig,
+            com.raibledesigns.config.JpaConfig,
+            com.raibledesigns.config.ServiceConfig,
+            com.raibledesigns.config.SecurityConfig
         </param-value>
     </context-param>
 

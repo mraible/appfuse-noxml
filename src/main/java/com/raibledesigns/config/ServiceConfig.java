@@ -1,12 +1,8 @@
 package com.raibledesigns.config;
 
 import com.raibledesigns.service.MailEngine;
-import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -17,9 +13,9 @@ import org.springframework.ui.velocity.VelocityEngineFactoryBean;
 
 import java.util.Properties;
 
-@Aspect
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
+@Configuration
 @ComponentScan("com.raibledesigns.service")
 public class ServiceConfig {
 
