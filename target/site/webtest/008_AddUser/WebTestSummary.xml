@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <summary starttime="Mon Sep 14 21:09:31 MDT 2015" duration="794" name="addUser" successful="yes">
+<topsteps notexecuted="0" failed="0" successful="27" total="27"/>
+<steps notexecuted="0" failed="0" successful="27" total="27"/>
+<timingprofile number="3" average="59">
+<range number="3" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile>
+</summary>

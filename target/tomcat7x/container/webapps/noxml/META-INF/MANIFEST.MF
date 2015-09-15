@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: AppFuse Spring MVC Application
+Implementation-Version: 1.0-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: mraible
+Implementation-Vendor-Id: com.raibledesigns
+Created-By: Apache Maven 3.3.3
+Build-Jdk: 1.8.0
+Implementation-Vendor: Pivotal Software, Inc.
+

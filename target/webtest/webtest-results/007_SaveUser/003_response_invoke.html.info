@@ -1,0 +1,6 @@
+url=http://localhost:50450/noxml/userform
+cookies=1
+cookie.0.name=JSESSIONID
+cookie.0.domain=localhost
+cookie.0.value=17294D3EE061432CD2B58AECD77B0124
+cookie.0.path=/noxml/

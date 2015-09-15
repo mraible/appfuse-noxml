@@ -1,0 +1,13 @@
+#;Method;URL;Response code;Response Message;Content Type;Duration
+1;GET;http://localhost:50450/noxml;302;Found;;4
+2;GET;http://localhost:50450/noxml/;302;Found;;3
+3;GET;http://localhost:50450/noxml/home;302;Found;;7
+4;GET;http://localhost:50450/noxml/login;200;OK;text/html;13
+5;GET;http://localhost:50450/noxml/assets/v/13647/main.css;200;OK;text/css;14
+6;GET;http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700;200;OK;text/css;218
+7;POST;http://localhost:50450/noxml/j_security_check;302;Found;;114
+8;GET;http://localhost:50450/noxml/app/home;302;Found;;7
+9;GET;http://localhost:50450/noxml/home;200;OK;text/html;21
+10;GET;http://localhost:50450/noxml/logout;302;Found;text/html;151
+11;GET;http://localhost:50450/noxml/home;302;Found;;5
+12;GET;http://localhost:50450/noxml/login;200;OK;text/html;9

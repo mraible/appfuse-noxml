@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/noxml/images/favicon.ico"/>
+    <title>File Upload | AppFuse</title>
+    
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+        
+          <link rel="stylesheet" type="text/css" href="/noxml/assets/v/13647/main.css"/>
+        
+        
+      
+    
+<meta name="menu" content="AdminMenu"/></head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/noxml/">AppFuse</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+<ul class="nav navbar-nav">
+    
+           
+                <li class="">
+        <a href="/noxml/home" title="Home" >Home</a>
+    
+          </li>
+            
+           
+                <li class="">
+        <a href="/noxml/userform" title="Edit Profile" >Edit Profile</a>
+    
+          </li>
+            
+           
+                                                                                                                                                                                                                     
+        <li class="dropdown active">
+          <a href="#" title="Administration"
+                                       class="dropdown-toggle" data-toggle="dropdown">Administration</a>
+    
+                      <ul class="dropdown-menu">
+        
+                                       
+                <li class="">
+        <a href="/noxml/admin/users" title="View Users" >View Users</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/noxml/admin/activeUsers" title="Current Users" >Current Users</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/noxml/admin/reload" title="Reload Options" >Reload Options</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/noxml/fileupload" title="Upload A File" >Upload A File</a>
+    
+          </li>
+            </ul>
+                    
+                  </li>
+              
+           
+                <li class="">
+        <a href="/noxml/logout" title="Logout" >Logout</a>
+    
+          </li>
+            </ul>
+</div>
+</div>
+
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col-sm-3">
+    <h2>Upload A File</h2>
+    <p>Note that the maximum allowed size of an uploaded file for this application is 2 MB.</p>
+</div>
+<div class="col-sm-7">
+    <form id="uploadForm" class="well" action="fileupload" method="post" enctype="multipart/form-data" onsubmit="return validateFileUpload(this)"><div class="form-group">
+        <label for="name" class="control-label">Friendly Name</label><input id="name" name="name" class="form-control" type="text" value=""/></div>
+        <div class="form-group">
+        <label for="file" class="control-label">File to Upload</label><input type="file" name="file" id="file"/>
+            </div>
+        <div class="form-group">
+            <button type="submit" name="upload" class="btn btn-primary" onclick="bCancel=false">
+                <i class="icon-upload icon-white"></i> Upload</button>
+            <button type="submit" name="cancel" class="btn btn-default" onclick="bCancel=true">
+                <i class="icon-remove"></i> Cancel</button>
+        </div>
+    </form></div><div class="col-sm-2">
+                
+        
+      <ul class="nav nav-pills nav-stacked">
+           <li class="nav-header">Administration</li>                        <li ><a href="/noxml/admin/users" title="View Users" >View Users</a></li>
+                                <li ><a href="/noxml/admin/activeUsers" title="Current Users" >Current Users</a></li>
+                                <li ><a href="/noxml/admin/reload" title="Reload Options" >Reload Options</a></li>
+                                <li class="active"><a href="/noxml/fileupload" title="Upload A File" >Upload A File</a></li>
+                    </ul>
+  </div>
+            </div>
+    </div>
+
+    <div id="footer" class="container navbar-fixed-bottom">
+        <span class="col-sm-6 text-left">Version 1.0-SNAPSHOT
+            | Logged in as: admin</span>
+        <span class="col-sm-6 text-right">
+            &copy; 2003-2015<a href="http://raibledesigns.com">Your Company Here</a>
+        </span>
+    </div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+        
+        
+          <script type="text/javascript" src="/noxml/assets/v/13647/main.js"></script>
+        
+      
+    
+<script type="text/javascript" language="Javascript1.1"> 
+
+<!-- Begin 
+
+     var bCancel = false; 
+
+    function validateFileUpload(form) {                                                                   
+        if (bCancel) 
+      return true; 
+        else 
+       return validateRequired(form); 
+   } 
+
+    function required () { 
+     this.aa = new Array("name", "Friendly Name is a required field.", new Function ("varName", " return this[varName];"));
+     this.ab = new Array("file", "File to Upload is a required field.", new Function ("varName", " return this[varName];"));
+    } 
+
+
+//End --> 
+</script>
+
+<script type="text/javascript" src="/noxml/scripts/validator.jsp"></script></body>
+</html>

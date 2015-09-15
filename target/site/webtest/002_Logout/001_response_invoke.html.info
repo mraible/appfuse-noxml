@@ -1,0 +1,6 @@
+url=http://localhost:50450/noxml/login
+cookies=1
+cookie.0.name=JSESSIONID
+cookie.0.domain=localhost
+cookie.0.value=8B70D56EE2916F4155E1E195D2E730BC
+cookie.0.path=/noxml/

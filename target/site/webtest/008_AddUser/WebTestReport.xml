@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<summary Implementation-Title="Canoo Webtest" Implementation-Version="development">
+    <testresult endtime="Mon Sep 14 21:09:32 MDT 2015"
+        location="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml:135: "
+        starttime="Mon Sep 14 21:09:31 MDT 2015" successful="yes" testspecname="addUser">
+        <config>
+            <parameter name="autorefresh" value="false"/>
+            <parameter name="basepath" value="noxml"/>
+            <parameter name="resultfile" value="WebTestReport.xml"/>
+            <parameter name="timeout" value="300"/>
+            <parameter name="showhtmlparseroutput" value="no"/>
+            <parameter name="saveprefix" value="response"/>
+            <parameter name="protocol" value="http"/>
+            <parameter name="resultpath" value="/Users/mraible/dev/noxml/target/webtest/webtest-results"/>
+            <parameter name="port" value="50450"/>
+            <parameter name="browser" value="IE6"/>
+            <parameter name="host" value="localhost"/>
+            <parameter name="saveresponse" value="yes"/>
+            <parameter name="haltonerror" value="no"/>
+            <parameter name="haltonfailure" value="no"/>
+        </config>
+        <results>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/login.xmlf" _line="1"
+                description="get Login Page" duration="19" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:50450/noxml"/>
+                <parameter name="url" value="/"/>
+                <resultFile name="001_response_invoke.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/login.xmlf" _line="2"
+                description="we should see the login title" duration="0" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*Login.*"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/login.xmlf" _line="3"
+                description="set user name" duration="0" result="completed" taskName="setinputfield">
+                <parameter name="name" value="j_username"/>
+                <parameter name="value" value="admin"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/login.xmlf" _line="4"
+                description="set password" duration="1" result="completed" taskName="setinputfield">
+                <parameter name="name" value="j_password"/>
+                <parameter name="value" value="admin"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/login.xmlf" _line="5"
+                description="Click the submit button" duration="274" result="completed" taskName="clickbutton">
+                <parameter name="label" value="Login"/>
+                <resultFile name="002_response_clickbutton.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/login.xmlf" _line="6"
+                description="Home Page follows if login ok" duration="1" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*Home.*"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="139"
+                description="click Add Button" duration="36" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:50450/noxml/userform?method=Add&amp;from=list"/>
+                <parameter name="url" value="/userform?method=Add&amp;from=list"/>
+                <resultFile name="003_response_invoke.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="140"
+                description="view the user profile title" duration="1" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*User Settings.*"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="142"
+                description="set username" duration="0" result="completed" taskName="setinputfield">
+                <parameter name="name" value="username"/>
+                <parameter name="value" value="newuser"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="145"
+                description="set firstName" duration="1" result="completed" taskName="setinputfield">
+                <parameter name="name" value="firstName"/>
+                <parameter name="value" value="Test"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="146"
+                description="set lastName" duration="1" result="completed" taskName="setinputfield">
+                <parameter name="name" value="lastName"/>
+                <parameter name="value" value="Name"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="147"
+                description="set city" duration="0" result="completed" taskName="setinputfield">
+                <parameter name="name" value="address.city"/>
+                <parameter name="value" value="Denver"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="148"
+                description="select province" duration="0" result="completed" taskName="setinputfield">
+                <parameter name="name" value="address.province"/>
+                <parameter name="value" value="CO"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="149"
+                description="select country" duration="1" result="completed" taskName="setselectfield">
+                <parameter name="name" value="address.country"/>
+                <parameter name="value" value="US"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="150"
+                description="set postalCode" duration="1" result="completed" taskName="setinputfield">
+                <parameter name="name" value="address.postalCode"/>
+                <parameter name="value" value="80210"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="151"
+                description="set email" duration="1" result="completed" taskName="setinputfield">
+                <parameter name="name" value="email"/>
+                <parameter name="value" value="newuser@raibledesigns.com"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="152"
+                description="set website" duration="0" result="completed" taskName="setinputfield">
+                <parameter name="name" value="website"/>
+                <parameter name="value" value="http://raibledesigns.com"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="153"
+                description="set passwordHint" duration="1" result="completed" taskName="setinputfield">
+                <parameter name="name" value="passwordHint"/>
+                <parameter name="value" value="test"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="154"
+                description="select roles" duration="0" result="completed" taskName="setselectfield">
+                <parameter name="name" value="userRoles"/>
+                <parameter name="value" value="ROLE_USER"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="155"
+                description="Click button 'Save'" duration="210" result="completed" taskName="clickbutton">
+                <parameter name="label" value="Save"/>
+                <resultFile name="004_response_clickbutton.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="157"
+                description="view user list screen" duration="1" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*User List.*"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="159"
+                description="verify success message" duration="3" result="completed" taskName="verifytext">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value="&lt;div class=&quot;alert alert-success.*>.*Test Name.*&lt;/div>"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="162"
+                description="Click edit user link" duration="122" result="completed" taskName="clickLink">
+                <parameter name="label" value="newuser"/>
+                <resultFile name="005_response_clickLink.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="163"
+                description="Confirm delete" duration="3" result="completed" taskName="prepareDialogResponse">
+                <parameter name="dialogType" value="confirm"/>
+                <parameter name="response" value="true"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="164"
+                description="Click button 'Delete'" duration="114" result="completed" taskName="clickbutton">
+                <parameter name="label" value="Delete"/>
+                <resultFile name="006_response_clickbutton.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="166"
+                description="verify success message" duration="3" result="completed" taskName="verifytext">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value="&lt;div class=&quot;alert alert-success.*>.*Test Name.*&lt;/div>"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="167"
+                description="display user list" duration="0" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*User List.*"/>
+            </step>
+        </results>
+    </testresult>
+</summary>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/noxml/images/favicon.ico"/>
+    <title>User List | AppFuse</title>
+    
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+        
+          <link rel="stylesheet" type="text/css" href="/noxml/assets/v/13647/main.css"/>
+        
+        
+      
+    
+<meta name="menu" content="AdminMenu"/></head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/noxml/">AppFuse</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+<ul class="nav navbar-nav">
+    
+           
+                <li class="">
+        <a href="/noxml/home" title="Home" >Home</a>
+    
+          </li>
+            
+           
+                <li class="">
+        <a href="/noxml/userform" title="Edit Profile" >Edit Profile</a>
+    
+          </li>
+            
+           
+                                                                                                                                                                                                                     
+        <li class="dropdown active">
+          <a href="#" title="Administration"
+                                       class="dropdown-toggle" data-toggle="dropdown">Administration</a>
+    
+                      <ul class="dropdown-menu">
+        
+                                       
+                <li class="">
+        <a href="/noxml/admin/users" title="View Users" >View Users</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/noxml/admin/activeUsers" title="Current Users" >Current Users</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/noxml/admin/reload" title="Reload Options" >Reload Options</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/noxml/fileupload" title="Upload A File" >Upload A File</a>
+    
+          </li>
+            </ul>
+                    
+                  </li>
+              
+           
+                <li class="">
+        <a href="/noxml/logout" title="Logout" >Logout</a>
+    
+          </li>
+            </ul>
+</div>
+</div>
+
+    <div class="container" id="content">
+        <div class="alert alert-success alert-dismissable">
+        <a href="#" data-dismiss="alert" class="close">&times;</a>
+        User Profile for Test Name has been deleted successfully.<br />
+        </div>
+    <div class="row">
+            <div class="col-sm-10">
+    <h2>Current Users</h2>
+
+    <form method="get" action="/noxml/admin/users" id="searchForm" class="form-inline">
+    <div id="search" class="text-right">
+        <span class="col-sm-9">
+            <input type="text" size="20" name="q" id="query" value=""
+                   placeholder="Enter search terms..." class="form-control input-sm">
+        </span>
+        <button id="button.search" class="btn btn-default btn-sm" type="submit">
+            <i class="icon-search"></i> Search</button>
+    </div>
+    </form>
+
+    <div id="actions" class="btn-group">
+        <a class="btn btn-primary" href="/noxml/userform?method=Add&from=list">
+            <i class="icon-plus icon-white"></i> Add</a>
+
+        <a class="btn btn-default" href="/noxml/home">
+            <i class="icon-ok"></i> Done</a>
+    </div>
+
+    <span class="pagebanner">4 users found, displaying all users.</span>
+<table cellspacing="0" id="users" class="table table-condensed table-striped table-hover" cellpadding="0">
+<thead>
+<tr>
+<th class="sortable sorted order1">
+<a href="?d-149542-s=0&amp;d-149542-o=1">Username</a></th>
+<th class="sortable">
+<a href="?d-149542-s=1&amp;d-149542-o=2">Full Name</a></th>
+<th class="sortable">
+<a href="?d-149542-s=2&amp;d-149542-o=2">E-Mail</a></th>
+<th class="sortable">
+<a href="?d-149542-s=3&amp;d-149542-o=2">Enabled</a></th></tr></thead>
+<tbody>
+<tr class="odd">
+<td style="width: 25%">
+<a href="/noxml/userform?from=list&amp;id=-2">admin</a></td>
+<td style="width: 34%">Matt Raible</td>
+<td style="width: 25%"><a href="mailto:matt@raibledesigns.com">matt@raibledesigns.com</a></td>
+<td style="width: 16%; padding-left: 15px"><input type="checkbox" disabled="disabled" checked="checked"/>
+        </td></tr>
+<tr class="even">
+<td style="width: 25%">
+<a href="/noxml/userform?from=list&amp;id=9">signup-user</a></td>
+<td style="width: 34%">Test Name</td>
+<td style="width: 25%"><a href="mailto:signup-user@raibledesigns.com">signup-user@raibledesigns.com</a></td>
+<td style="width: 16%; padding-left: 15px"><input type="checkbox" disabled="disabled" checked="checked"/>
+        </td></tr>
+<tr class="odd">
+<td style="width: 25%">
+<a href="/noxml/userform?from=list&amp;id=-3">two_roles_user</a></td>
+<td style="width: 34%">Two Roles User</td>
+<td style="width: 25%"><a href="mailto:two_roles_user@appfuse.org">two_roles_user@appfuse.org</a></td>
+<td style="width: 16%; padding-left: 15px"><input type="checkbox" disabled="disabled" checked="checked"/>
+        </td></tr>
+<tr class="even">
+<td style="width: 25%">
+<a href="/noxml/userform?from=list&amp;id=-1">user</a></td>
+<td style="width: 34%">Tomcat User</td>
+<td style="width: 25%"><a href="mailto:matt_raible@yahoo.com">matt_raible@yahoo.com</a></td>
+<td style="width: 16%; padding-left: 15px"><input type="checkbox" disabled="disabled" checked="checked"/>
+        </td></tr></tbody></table><div class="exportlinks well">Export options: 
+<a href="?d-149542-e=1&amp;6578706f7274=1"><span class="export csv">CSV </span></a>|
+<a href="?d-149542-e=2&amp;6578706f7274=1"><span class="export excel">Excel </span></a>|
+<a href="?d-149542-e=3&amp;6578706f7274=1"><span class="export xml">XML </span></a>|
+<a href="?d-149542-e=5&amp;6578706f7274=1"><span class="export pdf">PDF </span></a></div></div><div class="col-sm-2">
+                
+        
+      <ul class="nav nav-pills nav-stacked">
+           <li class="nav-header">Administration</li>                        <li class="active"><a href="/noxml/admin/users" title="View Users" >View Users</a></li>
+                                <li ><a href="/noxml/admin/activeUsers" title="Current Users" >Current Users</a></li>
+                                <li ><a href="/noxml/admin/reload" title="Reload Options" >Reload Options</a></li>
+                                <li ><a href="/noxml/fileupload" title="Upload A File" >Upload A File</a></li>
+                    </ul>
+  </div>
+            </div>
+    </div>
+
+    <div id="footer" class="container navbar-fixed-bottom">
+        <span class="col-sm-6 text-left">Version 1.0-SNAPSHOT
+            | Logged in as: admin</span>
+        <span class="col-sm-6 text-right">
+            &copy; 2003-2015<a href="http://raibledesigns.com">Your Company Here</a>
+        </span>
+    </div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+        
+        
+          <script type="text/javascript" src="/noxml/assets/v/13647/main.js"></script>
+        
+      
+    
+</body>
+</html>

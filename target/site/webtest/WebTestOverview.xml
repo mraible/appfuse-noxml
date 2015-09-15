@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overview Implementation-Title="Canoo WebTest" Implementation-Version="R_1810"><folder name="001_Login"><summary starttime="Mon Sep 14 21:09:20 MDT 2015" duration="5348" name="login" successful="yes"><topsteps notexecuted="0" failed="0" successful="6" total="6"/><steps notexecuted="0" failed="0" successful="6" total="6"/><timingprofile number="1" average="2571">
+<range number="0" to="1" from="0"/>
+<range number="1" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="002_Logout"><summary starttime="Mon Sep 14 21:09:26 MDT 2015" duration="862" name="logout" successful="yes"><topsteps notexecuted="0" failed="0" successful="8" total="8"/><steps notexecuted="0" failed="0" successful="8" total="8"/><timingprofile number="2" average="118">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="003_PasswordHint"><summary starttime="Mon Sep 14 21:09:27 MDT 2015" duration="287" name="passwordHint" successful="yes"><topsteps notexecuted="0" failed="0" successful="4" total="4"/><steps notexecuted="0" failed="0" successful="4" total="4"/><timingprofile number="2" average="143">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="004_Signup"><summary starttime="Mon Sep 14 21:09:27 MDT 2015" duration="1264" name="signup" successful="yes"><topsteps notexecuted="0" failed="0" successful="16" total="16"/><steps notexecuted="0" failed="0" successful="16" total="16"/><timingprofile number="1" average="588">
+<range number="1" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="005_EditUser"><summary starttime="Mon Sep 14 21:09:28 MDT 2015" duration="707" name="editUser" successful="yes"><topsteps notexecuted="0" failed="0" successful="8" total="8"/><steps notexecuted="0" failed="0" successful="8" total="8"/><timingprofile number="2" average="182">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="006_SearchUser"><summary starttime="Mon Sep 14 21:09:29 MDT 2015" duration="1047" name="searchUser" successful="yes"><topsteps notexecuted="0" failed="0" successful="11" total="11"/><steps notexecuted="0" failed="0" successful="11" total="11"/><timingprofile number="2" average="188">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="007_SaveUser"><summary starttime="Mon Sep 14 21:09:30 MDT 2015" duration="940" name="saveUser" successful="yes"><topsteps notexecuted="0" failed="0" successful="12" total="12"/><steps notexecuted="0" failed="0" successful="12" total="12"/><timingprofile number="2" average="26">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="008_AddUser"><summary starttime="Mon Sep 14 21:09:31 MDT 2015" duration="794" name="addUser" successful="yes"><topsteps notexecuted="0" failed="0" successful="27" total="27"/><steps notexecuted="0" failed="0" successful="27" total="27"/><timingprofile number="3" average="59">
+<range number="3" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="009_ActiveUsers"><summary starttime="Mon Sep 14 21:09:32 MDT 2015" duration="586" name="activeUsers" successful="yes"><topsteps notexecuted="0" failed="0" successful="8" total="8"/><steps notexecuted="0" failed="0" successful="8" total="8"/><timingprofile number="2" average="85">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="010_StaticPages"><summary starttime="Mon Sep 14 21:09:32 MDT 2015" duration="430" name="staticPages" successful="yes"><topsteps notexecuted="0" failed="0" successful="9" total="9"/><steps notexecuted="0" failed="0" successful="9" total="9"/><timingprofile number="2" average="18">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="011_Webservices"><summary starttime="Mon Sep 14 21:09:33 MDT 2015" duration="529" name="webservices" successful="yes"><topsteps notexecuted="0" failed="0" successful="10" total="10"/><steps notexecuted="0" failed="0" successful="10" total="10"/><timingprofile number="2" average="57">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="012_Dwr"><summary starttime="Mon Sep 14 21:09:33 MDT 2015" duration="900" name="dwr" successful="yes"><topsteps notexecuted="0" failed="0" successful="10" total="10"/><steps notexecuted="0" failed="0" successful="10" total="10"/><timingprofile number="2" average="59">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder><folder name="013_FileUpload"><summary starttime="Mon Sep 14 21:09:34 MDT 2015" duration="694" name="fileUpload" successful="yes"><topsteps notexecuted="0" failed="0" successful="13" total="13"/><steps notexecuted="0" failed="0" successful="13" total="13"/><timingprofile number="2" average="65">
+<range number="2" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile></summary></folder></overview>

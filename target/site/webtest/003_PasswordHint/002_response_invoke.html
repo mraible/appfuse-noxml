@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/noxml/images/favicon.ico"/>
+    <title>Login | AppFuse</title>
+    
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+        
+          <link rel="stylesheet" type="text/css" href="/noxml/assets/v/13647/main.css"/>
+        
+        
+      
+    
+<meta name="menu" content="Login"/></head>
+<body id="login">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/noxml/">AppFuse</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+<ul class="nav navbar-nav">
+    <li class="active">
+            <a href="/noxml/login">Login</a>
+        </li>
+    </ul>
+</div>
+</div>
+
+    <div class="container" id="content">
+        <div class="alert alert-success alert-dismissable">
+        <a href="#" data-dismiss="alert" class="close">&times;</a>
+        The password hint for admin has been sent to matt@raibledesigns.com.<br />
+        </div>
+    <div class="row">
+            <form method="post" id="loginForm" action="/noxml/j_security_check"
+    onsubmit="saveUsername(this);return validateForm(this)" class="form-signin" autocomplete="off">
+    <h2 class="form-signin-heading">
+        Sign In</h2>
+<input type="text" name="j_username" id="j_username" class="form-control"
+           placeholder="Username" required tabindex="1">
+    <input type="password" class="form-control" name="j_password" id="j_password" tabindex="2"
+           placeholder="Password" required>
+
+<label for="rememberMe" class="checkbox">
+        <input type="checkbox" name="_spring_security_remember_me" id="rememberMe" tabindex="3"/>
+        Remember Me</label>
+<button type="submit" class="btn btn-lg btn-primary btn-block" name="login" tabindex="4">
+        Login</button>
+</form>
+
+<p>
+    Not a member? <a href="/noxml/signup">Signup</a> for an account.</p>
+
+<p>Forgot your password?  Have your <a href="?" onmouseover="window.status='Have your password hint sent to you.'; return true" onmouseout="window.status=''; return true" title="Have your password hint sent to you." onclick="passwordHint(); return false" id="passwordHint">password hint e-mailed to you</a>.</p>
+
+<p>Request a <a href="?" onclick="requestRecoveryToken(); return false">password reset</a> e-mailed to you.</p></div>
+    </div>
+
+    <div id="footer" class="container navbar-fixed-bottom">
+        <span class="col-sm-6 text-left">Version 1.0-SNAPSHOT</span>
+        <span class="col-sm-6 text-right">
+            &copy; 2003-2015<a href="http://raibledesigns.com">Your Company Here</a>
+        </span>
+    </div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+        
+        
+          <script type="text/javascript" src="/noxml/assets/v/13647/main.js"></script>
+        
+      
+    
+<script type="text/javascript">
+    if ($.cookie("username") != null && $.cookie("username") != "") {
+        $("#j_username").val($.cookie("username"));
+        $("#j_password").focus();
+    } else {
+        $("#j_username").focus();
+    }
+    
+    function saveUsername(theForm) {
+        $.cookie("username",theForm.j_username.value, { expires: 30, path: "/noxml/"});
+    }
+    
+    function validateForm(form) {                                                               
+        var valid = validateRequired(form);
+        if (valid == false) {
+            $(".form-group").addClass('error');
+        }
+        return valid;
+    }
+
+    function passwordHint() {
+        if ($("#j_username").val().length == 0) {
+            alert("Username is a required field.");
+            $("#j_username").focus();
+        } else {
+            location.href="/noxml/passwordHint?username=" + $("#j_username").val();
+        }
+    }
+    
+    function requestRecoveryToken() {
+        if ($("#j_username").val().length == 0) {
+            alert("Username is a required field.");
+            $("#j_username").focus();
+        } else {
+            location.href="/noxml/requestRecoveryToken?username=" + $("#j_username").val();
+        }
+    }    
+    
+    function required () { 
+        this.aa = new Array("j_username", "Username is a required field.", new Function ("varName", " return this[varName];"));
+        this.ab = new Array("j_password", "Password is a required field.", new Function ("varName", " return this[varName];"));
+    } 
+</script></body>
+</html>

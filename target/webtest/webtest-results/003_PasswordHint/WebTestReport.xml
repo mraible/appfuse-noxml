@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<summary Implementation-Title="Canoo Webtest" Implementation-Version="development">
+    <testresult endtime="Mon Sep 14 21:09:27 MDT 2015"
+        location="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml:60: "
+        starttime="Mon Sep 14 21:09:27 MDT 2015" successful="yes" testspecname="passwordHint">
+        <config>
+            <parameter name="autorefresh" value="false"/>
+            <parameter name="basepath" value="noxml"/>
+            <parameter name="resultfile" value="WebTestReport.xml"/>
+            <parameter name="timeout" value="300"/>
+            <parameter name="showhtmlparseroutput" value="no"/>
+            <parameter name="saveprefix" value="response"/>
+            <parameter name="protocol" value="http"/>
+            <parameter name="resultpath" value="/Users/mraible/dev/noxml/target/webtest/webtest-results"/>
+            <parameter name="port" value="50450"/>
+            <parameter name="browser" value="IE6"/>
+            <parameter name="host" value="localhost"/>
+            <parameter name="saveresponse" value="yes"/>
+            <parameter name="haltonerror" value="no"/>
+            <parameter name="haltonfailure" value="no"/>
+        </config>
+        <results>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="63"
+                description="get Login Page" duration="34" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:50450/noxml"/>
+                <parameter name="url" value="/"/>
+                <resultFile name="001_response_invoke.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="64"
+                description="we should see the login title" duration="1" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*Login.*"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="65"
+                description="click password hint link" duration="251" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:50450/noxml/passwordHint?username=admin"/>
+                <parameter name="url" value="/passwordHint?username=admin"/>
+                <resultFile name="002_response_invoke.html"/>
+            </step>
+            <step _filename="/Users/mraible/dev/noxml/src/test/resources/web-tests.xml" _line="66"
+                description="show login title again" duration="1" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*Login.*"/>
+            </step>
+        </results>
+    </testresult>
+</summary>

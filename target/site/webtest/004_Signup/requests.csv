@@ -1,0 +1,6 @@
+#;Method;URL;Response code;Response Message;Content Type;Duration
+1;GET;http://localhost:50450/noxml/signup;200;OK;text/html;565
+2;GET;http://localhost:50450/noxml/assets/v/13647/main.css;200;OK;text/css;8
+3;GET;http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700;200;OK;text/css;210
+4;POST;http://localhost:50450/noxml/signup;302;Found;;230
+5;GET;http://localhost:50450/noxml/home;200;OK;text/html;12
