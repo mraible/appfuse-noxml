@@ -10,7 +10,6 @@ import org.apache.cxf.transport.servlet.CXFServlet;
 import org.displaytag.filter.ResponseOverrideFilter;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
-import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -69,11 +68,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
         container.addListener(EscapeXmlELResolverListener.class);
         container.addListener(MenuContextListener.class);
 
-        XmlWebApplicationContext appContext = new XmlWebApplicationContext();
-        appContext.setConfigLocation("/WEB-INF/dispatcher-servlet.xml");
-
-        ServletRegistration.Dynamic dispatcher =
-                container.addServlet("dispatcher", new DispatcherServlet(appContext));
+        ServletRegistration.Dynamic dispatcher = container.addServlet("dispatcher", new DispatcherServlet());
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/app/*");
     }
