@@ -10,13 +10,12 @@ import org.springframework.orm.ObjectRetrievalFailureException;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
 public class UserDaoTest extends BaseDaoTestCase {
-    @PersistenceContext
+    @PersistenceContext(unitName="default")
     private EntityManager entityManager;
 
     @Autowired

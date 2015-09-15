@@ -1,6 +1,5 @@
 package com.raibledesigns.service;
 
-import com.raibledesigns.config.JpaConfig;
 import com.raibledesigns.config.ResourcesConfig;
 import com.raibledesigns.config.ServiceConfig;
 import com.raibledesigns.util.ConvertUtil;
@@ -17,7 +16,7 @@ import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {ResourcesConfig.class, JpaConfig.class, ServiceConfig.class})
+@ContextConfiguration(classes = {ResourcesConfig.class, ServiceConfig.class})
 /**
  * Test classes can extend this manager based on a spring context.
  * This test class can be moved to the test tree.

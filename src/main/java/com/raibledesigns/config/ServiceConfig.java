@@ -1,6 +1,8 @@
 package com.raibledesigns.config;
 
 import com.raibledesigns.service.MailEngine;
+import org.apache.velocity.app.VelocityEngine;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 import org.springframework.mail.SimpleMailMessage;
@@ -20,9 +22,10 @@ import java.util.Properties;
 public class ServiceConfig {
 
     @Bean
-    public MailEngine mailEngine() {
+    @Autowired
+    public MailEngine mailEngine(VelocityEngine velocityEngine) {
         MailEngine mailEngine = new MailEngine();
-        mailEngine.setVelocityEngine(velocityEngine().getObject());
+        mailEngine.setVelocityEngine(velocityEngine);
         mailEngine.setFrom("${mail.default.from}");
         return mailEngine;
     }

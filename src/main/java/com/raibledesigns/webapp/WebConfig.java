@@ -51,6 +51,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/admin/activeUsers").setViewName("admin/activeUsers");
         registry.addViewController("/home").setViewName("home");
+        registry.addViewController("/").setViewName("index");
     }
 
     @Bean
