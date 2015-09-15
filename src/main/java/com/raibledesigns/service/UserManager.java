@@ -5,6 +5,7 @@ import com.raibledesigns.model.User;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 
@@ -59,6 +60,7 @@ public interface UserManager extends GenericManager<User, Long> {
      * @throws UserExistsException thrown when user already exists
      * @return user the updated user object
      */
+    @Transactional(rollbackOn = UserExistsException.class)
     User saveUser(User user) throws UserExistsException;
 
     /**
@@ -84,11 +86,11 @@ public interface UserManager extends GenericManager<User, Long> {
 
     /**
      * Builds a recovery password url by replacing placeholders with username and generated recovery token.
-     * 
+     *
      * UrlTemplate should include two placeholders '{username}' for username and '{token}' for the recovery token.
-     * 
+     *
      * @param user
-     * @param urlTemplateurl
+     * @param urlTemplate
      *            template including two placeholders '{username}' and '{token}'
      * @return
      */
@@ -110,7 +112,7 @@ public interface UserManager extends GenericManager<User, Long> {
     boolean isRecoveryTokenValid(String username, String token);
 
     /**
-     * 
+     *
      * @param user
      * @param token
      * @return
@@ -127,7 +129,7 @@ public interface UserManager extends GenericManager<User, Long> {
     void sendPasswordRecoveryEmail(String username, String urlTemplate);
 
     /**
-     * 
+     *
      * @param username
      * @param currentPassword
      * @param recoveryToken

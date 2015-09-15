@@ -1,9 +1,15 @@
 package com.raibledesigns.dao.jpa;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import com.raibledesigns.dao.GenericDao;
 import com.raibledesigns.dao.SearchException;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.queryParser.ParseException;
+import org.apache.lucene.util.Version;
+import org.hibernate.search.jpa.FullTextEntityManager;
+import org.hibernate.search.jpa.Search;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
@@ -13,12 +19,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.queryParser.ParseException;
-import org.apache.lucene.util.Version;
-import org.hibernate.search.jpa.FullTextEntityManager;
-import org.hibernate.search.jpa.Search;
 
 /**
  * This class serves as the Base class for all other DAOs - namely to hold
@@ -134,8 +134,8 @@ public class GenericDaoJpa<T, PK extends Serializable> implements GenericDao<T, 
      * {@inheritDoc}
      */
     public void remove(T object) {
-        entityManager.remove(entityManager.contains(object) ? object : entityManager.merge(object)); 
-    } 
+        entityManager.remove(entityManager.contains(object) ? object : entityManager.merge(object));
+    }
 
     /**
      * {@inheritDoc}

@@ -1,35 +1,28 @@
 package com.raibledesigns.dao;
 
+import com.raibledesigns.config.JpaConfig;
+import com.raibledesigns.config.ResourcesConfig;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.hibernate.search.jpa.FullTextEntityManager;
+import org.hibernate.search.jpa.Search;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
 import javax.persistence.EntityManagerFactory;
 import javax.transaction.Transactional;
-
-import org.hibernate.search.jpa.FullTextEntityManager;
-import org.hibernate.search.jpa.Search;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import java.util.*;
 
 /**
  * Base class for running DAO tests.
  * @author mraible
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(
-    locations={"classpath:/applicationContext-resources.xml",
-               "classpath:/applicationContext-dao.xml",
-               "classpath*:/applicationContext.xml",
-               "classpath:**/applicationContext*.xml"})
+@ContextConfiguration(classes = {ResourcesConfig.class, JpaConfig.class})
 @Transactional
 public abstract class BaseDaoTestCase {
     /**

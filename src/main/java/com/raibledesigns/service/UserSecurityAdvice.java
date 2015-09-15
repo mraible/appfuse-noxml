@@ -1,11 +1,12 @@
 package com.raibledesigns.service;
 
-import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import com.raibledesigns.Constants;
 import com.raibledesigns.model.Role;
 import com.raibledesigns.model.User;
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.aop.AfterReturningAdvice;
 import org.springframework.aop.MethodBeforeAdvice;
 import org.springframework.security.access.AccessDeniedException;
@@ -30,6 +31,7 @@ import java.util.Set;
  *
  * @author mraible
  */
+@Aspect
 public class UserSecurityAdvice implements MethodBeforeAdvice, AfterReturningAdvice {
 
     /**
