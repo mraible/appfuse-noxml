@@ -52,9 +52,9 @@ public class ServiceConfig {
 
     @Bean
     @Scope("prototype")
-    public SimpleMailMessage mailMessage() {
+    public SimpleMailMessage mailMessage(@Value("${mail.default.from}") String defaultFrom) {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setFrom("${mail.default.from}");
+        mailMessage.setFrom(defaultFrom);
         return mailMessage;
     }
 
