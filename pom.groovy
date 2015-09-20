@@ -41,6 +41,20 @@ project {
       artifactId 'spring-boot-starter-data-jpa'
     }
     dependency {
+      groupId 'org.springframework.boot'
+      artifactId 'spring-boot-starter'
+      exclusions {
+        exclusion {
+          groupId 'org.springframework.boot'
+          artifactId 'spring-boot-starter-logging'
+        }
+      }
+    }
+    dependency {
+      groupId 'org.springframework.boot'
+      artifactId 'spring-boot-starter-log4j2'
+    }
+    dependency {
       groupId 'com.h2database'
       artifactId 'h2'
     }
